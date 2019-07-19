@@ -15,19 +15,19 @@
 ##################################################################################################
 # Sleep service
 ##################################################################################################
-#apiVersion: v1
-#kind: Service
-#metadata:
-#  name: sleep
-#  labels:
-#    app: sleep
-#spec:
-#  ports:
-#  - port: 80
-#    name: http
-#  selector:
-#    app: sleep
-#---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sleep
+  labels:
+    app: sleep
+spec:
+  ports:
+  - port: 80
+    name: http
+  selector:
+    app: sleep
+---
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
